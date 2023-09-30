@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="styles/style.css">
+
+    <style>
+        h3 {
+            width: 500px;
+            height: 100px;
+            border-bottom: 5px dashed #f00;
+            text-align: right;
+        }
+
+        h6{
+            text-transform: uppercase;
+        }
+
+        .heading{
+            background-color: blueviolet;
+        }
+
+        .title{
+            /* display:none; */
+        }
+
+        #my-text{
+            text-transform: uppercase;
+        }
+
+        h1, h3 {
+
+        }
+
+        .box p{
+            font-size: 60px;
+            color: chartreuse;
+            text-align: center;
+        }
+
+        article > p {
+            /* font-weight: bold;
+            background-color: #333;
+            color: #fff;
+            padding: .5em; */
+        }
+
+        /* h1 + p {
+            font-weight: bold;
+            background-color: #333;
+            color: #fff;
+            padding: .5em;
+        }   */
+        
+        h1 ~ p {
+            font-weight: bold;
+            background-color:red;
+            color: #fff;
+            padding: .5em;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title" style="color: aqua">Hello World</h1>
+    <p style="height: 100px; border: 1px solid blue; color: green">
+        This is my first paragraph
+    </p>
+    <h3 class="heading title">
+        Just kidding...
+    </h3>
+    <h6 class="heading">
+        Welcome Home
+    </h6>
+
+    <span id="my-text">
+        sdjhbhdfhddkjhdjdjdj
+    </span>
+
+    <div class="box">
+        <p>Text in .box</p>
+    </div>
+    <p>Text not in .box</p>
+
+    <article>
+        <h1>A heading</h1>
+        <p>I am a paragraph.</p>
+        <div>I am a div</div>
+        <p>I am another paragraph.</p>
+
+        <div>
+            <p>Not a direct child</p>
+        </div>
+    </article>
+
+    <article>
+        <h1>A heading</h1>
+        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+                melon azuki bean garlic.</p>
+    
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
+                greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+    </article>
+</body>
+</html>
