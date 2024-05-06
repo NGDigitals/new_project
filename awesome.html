@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
+    <!-- <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
     <title>Font Awesome</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&display=swap" rel="stylesheet">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,13 +26,14 @@
             /* font-family: "chathurabold"; */
             font-family: "Rubik Bubbles";
             src: url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
-            font-weight: normal;
-            font-style: normal;
+            font-weight:bolder;
+            font-style:italic;
         }
         h1{
             /* font-family: 'Akatab', sans-serif; */
             /* font-family: "Font Awesome 5 Free";  */
-            font-family: "Rubik Bubbles";
+            /* font-family: "Rubik Bubbles"; */
+            /* font-family: 'Roboto', sans-serif; */
             font-weight: 400; 
             /* content: "\f007"; */
         }
@@ -52,12 +59,19 @@
             'GRAD' 0,
             'opsz' 48
         } */
+
+        .text {
+            font-family: "Jacquard 12 Charted", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
     </style>
 </head>
 <body>
     <ul>
         <li>
-            <i class="fa fa-home red-icon"></i>
+            <i class="fa fa-id-card red-icon"></i>
             Home
         </li>
         <li>
@@ -84,7 +98,7 @@
         play_circle
     </span>
 
-    <h1>Welcome to Japan</h1>
+    <h1 class="text">Welcome to Japan</h1>
     <h3>This is my Chua Chua</h3>
 </body>
 </html>

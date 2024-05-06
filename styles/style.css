@@ -1,21 +1,36 @@
+@font-face {
+    /* font-family: "chathurabold"; */
+    font-family: "Rubik Bubbles";
+    src: url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+    font-weight: normal;
+    font-style: normal;
+}
+h6{
+    font-size: 25px;
+}
 span {
     border: 1px dotted blue;
     font-size: 100px;
     text-decoration: line-through;
 }
 
-@media (max-width: 390px) {
+@media (min-width: 300px) and (max-width: 600px) {
     body{ 
         background-color: red;
     }
 } 
 
-/* Small devices (landscape phones, 576px and up)  */
-@media (min-width: 360px) and (max-width: 390x) { 
+@media (min-width: 600px) and (max-width: 1200px) {
     body{ 
         background-color: blue;
     }
-} 
+}
+/* Small devices (landscape phones, 576px and up) 
+@media (min-width: 600px) and (max-width: 1200x) { 
+    body{ 
+        background-color: blue;
+    }
+}  */
 
  /* Medium devices (tablets, 768px and up)  */
 	@media (min-width: 768px) and (max-width: 992px)  { /* ... */ } 

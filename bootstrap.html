@@ -6,61 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    
     <link rel="stylesheet" href="styles.css">
     <style>
         .box{
             border: 1px solid #f00;
             height: 500px;
         }
+        .custom-button{
+            color: green !important;
+            font-size: 40px !important;
+        }
     </style>
 </head>
 <body>
 
-    <h1>fjkbkffjggg</h1>
     <header>
         <nav class="navbar navbar-default">
-            <div class="container-fluid">
+            <div class="container-fluid custom-container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">WebSiteName</a>
                 </div>
-                <ul class="nav navbar-nav custom-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Money Laundering</a></li>
-                            <li><a href="#">Racketeering</a></li>
+                            <li><a href="money.html">Money Laundering</a></li>
+                            <li><a href="https://google.com">Racketeering</a></li>
                             <li><a href="#">Anything you want to do</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
                 </ul>
             </div>
         </nav>        
     </header>
     <div class="container">
         <!-- Some BootStrap Classes here -->
-        <!-- <div class="row" style="background-color:lightblue">
-            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-8</div>
+        <div class="row" style="background-color:lightblue">
+            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-1</div>
+            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-2</div>
+            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-3</div>
             <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-4</div>
+            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-5</div>
+            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-6</div>
+            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-7</div>
             <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-8</div>
-            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-4</div>
-            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-8</div>
-            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-4</div>
-            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-8</div>
-            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-4</div>
-            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-8</div>
-            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-4</div>
-            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-8</div>
-            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-4</div>
+            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-9</div>
+            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-10</div>
+            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-11</div>
+            <div class="col-lg-1 col-md-2 col-sm-6 col-12" style="border: 1px solid #f00;">col-12</div>
         </div>
-        <hr /> -->
+    </div>
+    <hr />
+    <div class="container-fluid">
         <div class="row">   
             <nav class="box col order-1 col-lg-2 col-md-6 col-sm-12 col-12">
                 <ul>
@@ -76,7 +85,7 @@
             </aside>
         </div>
         <div class="row">
-            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-primary custom-button">Primary</button>
             <button type="button" class="btn btn-secondary">Secondary</button>
             <button type="button" class="btn btn-success">Success</button>
             <button type="button" class="btn btn-danger">Danger</button>
@@ -110,5 +119,7 @@
             aria-valuemax="100">25%</div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>

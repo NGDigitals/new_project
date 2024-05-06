@@ -26,34 +26,60 @@
             color: #0000FF
         }
         .box {
+            width:500px;/* 350em; 50% */
             display: block;
-            border: 1px solid #f00;
+            border: 1px dotted #f00;
             /* padding-left: 200px;
             padding-right: 200px;
             padding-top: 100px;
             padding-bottom: 100px; */
             padding: 100px 200px 100px 200px;
-            margin: 100px 200px 100px 200px;
+            margin: 0px 200px 100px 200px;
         }
         p{
             font-family: Helvetica neue, roboto;
             letter-spacing: 4px;
             word-spacing: 4px;
             font-weight: bold;
+            border: 1px solid #0000FF;
         }
         .inline{
             /* display: inline; */
         }
+        .rounded {
+            border-radius: 15px;
+        }
+        .elliptical{
+            border-radius: 50px / 25px;
+        }
         /* .parent{
             display: block;
         } */
+        .my-box {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        #box-1 {
+            /* display: none; */
+            background: blue;
+        }
+        #box-2 {
+            /* display: none; */
+            visibility:hidden;
+            background: red;
+        }
+        #box-3 {
+            /* display: none; */
+            background: green;
+        }
     </style>
 </head>
 <body>
     <a href="https://google.com">Go To Google</a>
 
     <div class="box">
-        <p>
+        <p class="rounded">
             sdkjsdjds jsdsjdjsj
             sdkjsdjds jsdsjdjsj
             sdkjsdjds jsdsjdjsj
@@ -62,9 +88,21 @@
             sdkjsdjds jsdsjdjsj
             sdkjsdjds jsdsjdjsj
         </p>
-        <p class="inline">One</p>
-        <p class="inline">Two</p>
+        <p class="inline rounded">One</p>
+        <p class="inline ellipsis">Two</p>
         <p class="inline">Three</p>
+    </div>
+
+    <div>
+        <div id="box-1" class="my-box">
+
+        </div>
+        <div id="box-2" class="my-box">
+
+        </div>
+        <div id="box-3" class="my-box">
+
+        </div>
     </div>
 </body>
 </html>

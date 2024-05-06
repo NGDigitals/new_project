@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="styles/style.css">
 
     <style>
+        h3{
+            color:blue;
+            border: 2px solid #f00;
+        }
+    </style>
+
+    <style>
         h3 {
             width: 500px;
             height: 100px;
@@ -32,39 +39,51 @@
         }
 
         h1, h3 {
-
+            border: 2px dashed #f00;
+            color: brown;
         }
 
-        .box p{
+        .box .para{
             font-size: 60px;
             color: chartreuse;
             text-align: center;
         }
 
         article > p {
-            /* font-weight: bold;
-            background-color: #333;
-            color: #fff;
-            padding: .5em; */
-        }
-
-        /* h1 + p {
             font-weight: bold;
             background-color: #333;
             color: #fff;
             padding: .5em;
-        }   */
+        }
+
+        h1 + p {
+            font-weight: bold;
+            background-color: #333;
+            color: #fff;
+            padding: .5em;
+        }  
         
         h1 ~ p {
             font-weight: bold;
-            background-color:red;
+            border: 3px solid red;
+            border-radius: 5px;
             color: #fff;
             padding: .5em;
+        }
+        #my-text, .box, .paragraph{
+            border-radius: 4px;
+        }
+        .title{
+            background-color: #f00 !important;
+        }
+        .heading{
+            background-color: aqua;
         }
     </style>
 </head>
 <body>
-    <h1 class="title" style="color: aqua">Hello World</h1>
+    <h1 style="background-color: #f00;">s dnhdbsksjnkjs</h1>
+    <h1 class="title heading" style="color: aqua">Hello World</h1>
     <p style="height: 100px; border: 1px solid blue; color: green">
         This is my first paragraph
     </p>
@@ -80,9 +99,16 @@
     </span>
 
     <div class="box">
-        <p>Text in .box</p>
+        <div class="inner-box">
+            <p class="para">jdjjddddkkfdkfkkfkfk</p>
+            <span>
+                <p>j.fnjfgnfnj</p>
+            </span>
+        </div>
+        <p class="para">Text in kdljdjkdjdjdjdd box</p>
     </div>
-    <p>Text not in .box</p>
+
+    <p class="paragraph">Text not in .box</p>
 
     <article>
         <h1>A heading</h1>
